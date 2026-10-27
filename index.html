@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adrian Frazier | SEO, AEO &amp; Website Specialist</title>
+<meta name="description" content="SEO, AEO, and website specialist in the Kansas City metro. Case files on AI search visibility, content rewrites, indexing problems, and site health.">
+<link rel="canonical" href="https://frazivert.github.io/">
+<meta property="og:title" content="Adrian Frazier | SEO, AEO &amp; Website Specialist">
+<meta property="og:description" content="Case files on AI search visibility, content rewrites, and SEO work on a 1,000+ page website.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://frazivert.github.io/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Adrian Frazier","jobTitle":"SEO, AEO & Website Specialist","url":"https://frazivert.github.io/","email":"mailto:arfvader18@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Olathe","addressRegion":"KS","addressCountry":"US"},"sameAs":["https://www.linkedin.com/in/adrian-frazier-79bb5529b/","https://github.com/frazivert"],"knowsAbout":["Search engine optimization","Answer engine optimization","Content writing","Structured data","Google Search Console"]}
+</script>
+<style>
+  :root {
+    --black: #111;
+    --gray: #555;
+    --line: #ddd;
+    --white: #fff;
+    --manila: #f1dea8;
+    --manila-dark: #d9c07a;
+    --manila-light: #f8edcc;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: var(--black);
+    background: var(--white);
+    line-height: 1.6;
+  }
+
+  a { color: inherit; }
+  code { font-size: 0.9em; }
+
+  .wrap {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* header */
+  header {
+    background: var(--black);
+    color: var(--white);
+    padding: 64px 0 48px;
+  }
+  header h1 {
+    font-size: 2.6rem;
+    line-height: 1.1;
+    margin: 0 0 6px;
+  }
+  .role {
+    font-size: 1.15rem;
+    color: #ccc;
+    margin: 0 0 24px;
+  }
+  .intro {
+    max-width: 62ch;
+    color: #e5e5e5;
+    margin: 0 0 28px;
+  }
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 9px 18px;
+    border: 1px solid var(--white);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .btn.solid { background: var(--white); color: var(--black); }
+  .btn:hover { background: var(--manila); color: var(--black); border-color: var(--manila); }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    border-top: 1px solid #333;
+    padding-top: 24px;
+    margin: 0;
+  }
+  .stats div { margin: 0; }
+  .stats dd { margin: 0; font-size: 1.5rem; font-weight: 700; }
+  .stats dt { font-size: 0.8rem; color: #aaa; line-height: 1.4; }
+  @media (max-width: 640px) {
+    .stats { grid-template-columns: 1fr 1fr; }
+    header h1 { font-size: 2.1rem; }
+  }
+
+  /* nav */
+  nav {
+    position: sticky;
+    top: 0;
+    background: var(--white);
+    border-bottom: 1px solid var(--line);
+    z-index: 5;
+  }
+  nav .wrap { display: flex; gap: 18px; overflow-x: auto; }
+  nav a {
+    padding: 14px 0;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: var(--gray);
+    white-space: nowrap;
+  }
+  nav a:hover { color: var(--black); }
+
+  section { padding: 52px 0; border-bottom: 1px solid var(--line); }
+  h2 { font-size: 1.6rem; margin: 0 0 20px; }
+  #about p { max-width: 65ch; }
+
+  /* case files as manila folders */
+  .folder {
+    position: relative;
+    margin: 34px 0 0;
+  }
+  .folder .tab {
+    position: absolute;
+    top: -24px;
+    left: 0;
+    background: var(--manila);
+    border: 1px solid var(--manila-dark);
+    border-bottom: none;
+    border-radius: 6px 6px 0 0;
+    padding: 2px 14px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.8rem;
+    height: 25px;
+  }
+  .folder details {
+    background: var(--manila);
+    border: 1px solid var(--manila-dark);
+    border-radius: 0 6px 6px 6px;
+  }
+  .folder summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 18px 20px;
+  }
+  .folder summary::-webkit-details-marker { display: none; }
+  .folder h3 {
+    margin: 0 0 6px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .folder h3::after {
+    content: "+";
+    font-weight: 400;
+    color: var(--gray);
+  }
+  .folder details[open] h3::after { content: "\2212"; }
+  .folder .summary-text { margin: 0; max-width: 65ch; }
+  .folder .body {
+    background: var(--manila-light);
+    border-top: 1px solid var(--manila-dark);
+    padding: 18px 20px 4px;
+    border-radius: 0 0 6px 6px;
+  }
+  .folder .body p { max-width: 65ch; margin: 0 0 14px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 14px; padding: 0; list-style: none; }
+  .tags li {
+    font-size: 0.8rem;
+    background: var(--white);
+    border: 1px solid var(--manila-dark);
+    padding: 3px 10px;
+  }
+
+  /* projects and skills */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .card { border: 1px solid var(--line); padding: 18px; }
+  .card h3 { margin: 0 0 8px; font-size: 1.05rem; }
+  .card p { margin: 0; font-size: 0.95rem; }
+  .skills { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .skills h3 { font-size: 1rem; margin: 0 0 8px; }
+  .skills ul { margin: 0; padding-left: 18px; }
+  @media (max-width: 700px) {
+    .cards, .skills { grid-template-columns: 1fr; }
+  }
+
+  footer {
+    background: var(--black);
+    color: var(--white);
+    padding: 48px 0;
+  }
+  footer h2 { margin-bottom: 10px; }
+  footer p { color: #ccc; max-width: 55ch; }
+  footer .small { font-size: 0.8rem; color: #888; margin-top: 32px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>Adrian Frazier</h1>
+    <p class="role">SEO, AEO &amp; Website Specialist, Kansas City metro</p>
+    <p class="intro">
+      I manage SEO and content for a 1,000+ page law firm website, and I'm
+      the only person doing it. Most of my work is rewriting pages so they
+      answer what people are actually searching for, fixing the things that
+      keep Google and AI search tools from picking those pages up, and
+      tracking the results in Search Console. The case files below are from
+      that job.
+    </p>
+    <div class="links">
+      <a class="btn solid" href="https://www.linkedin.com/in/adrian-frazier-79bb5529b/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="mailto:arfvader18@gmail.com">Email</a>
+    </div>
+    <dl class="stats">
+      <div><dd>139K+</dd><dt>Google AI Overview impressions since May</dt></div>
+      <div><dd>10.4 → 6.4</dd><dt>average Google position, at peak</dt></div>
+      <div><dd>15</dd><dt>FAQ hub pages rewritten</dt></div>
+      <div><dd>27</dd><dt>service-area pages written</dt></div>
+    </dl>
+  </div>
+</header>
+
+<nav>
+  <div class="wrap">
+    <a href="#about">About</a>
+    <a href="#cases">Case Files</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About</h2>
+    <p>
+      I started at a criminal defense, family law, and personal injury firm
+      in May 2026. The site was already losing traffic when I got there, and
+      my boss and I both knew that going in. So the goal has been steady
+      progress on a big site: figure out which pages matter, improve them,
+      and keep track of what changed and when.
+    </p>
+    <p>
+      A lot of the job is writing. People searching legal topics are usually
+      stressed and want a straight answer, so I try to write pages that give
+      them one in plain language. That kind of page also tends to be what
+      Google's AI Overviews and tools like ChatGPT end up citing. I send the
+      managing partner an update every week on what moved, what didn't, and
+      what I want to work on next.
+    </p>
+    <p>
+      I'm finishing an Associate's in Data Science at JCCC, which is where I
+      picked up Python and the habit of checking the numbers before I say
+      something worked.
+    </p>
+  </div>
+</section>
+
+<section id="cases">
+  <div class="wrap">
+    <h2>Case Files</h2>
+
+    <div class="folder">
+      <span class="tab">2026-01</span>
+      <details>
+        <summary>
+          <h3>Measuring how AI search sees the site</h3>
+          <p class="summary-text">
+            I needed a baseline for AI visibility before I could say whether
+            anything improved it. I set one up in SEMrush and used it to
+            decide which content to work on first.
+          </p>
+        </summary>
+        <div class="body">
+          <ul class="tags">
+            <li>SEMrush AI Visibility</li>
+            <li>Search Console</li>
+            <li>139K+ AI Overview impressions</li>
+          </ul>
+          <p>
+            SEMrush's AI Visibility tool scored the site 27 out of 100 in
+            August. That's low, but it gave me something to measure against.
+            The more useful number was the breakdown of the prompts the firm
+            could show up for: 44% navigational (people looking for the firm
+            by name), 29% informational (people trying to understand a legal
+            question), and the rest split between commercial, transactional,
+            and task prompts.
+          </p>
+          <p>
+            Informational prompts are where a well-written answer can get
+            picked up, so the Criminal Defense FAQ pages went to the top of
+            my list (see 2026-02).
+          </p>
+          <p>
+            I check SEMrush against Search Console because the two don't
+            always agree. Search Console showed the site getting about 1,100
+            to 1,200 AI Overview impressions a day over the summer, up from
+            around 750 a day when Google started reporting it, and over
+            139,000 total since May. AI search reporting is still new and
+            pretty noisy, so I treat these numbers as a trend to watch and
+            don't tie them to any single change.
+          </p>
+        </div>
+      </details>
+    </div>
+
+    <div class="folder">
+      <span class="tab">2026-02</span>
+      <details>
+        <summary>
+          <h3>Rewriting thin FAQ hub pages</h3>
+          <p class="summary-text">
+            A site audit flagged nine FAQ hub pages for low word count. I
+            wrote real intros for them, then had to wait out a ranking dip
+            that came right after.
+          </p>
+        </summary>
+        <div class="body">
+          <ul class="tags">
+            <li>9 hubs, then all 15</li>
+            <li>Top 9 pages by impressions</li>
+            <li>"welfare check": 14.8K searches/mo</li>
+          </ul>
+          <p>
+            Each intro explains the topic (arrests, bond, discovery, motions
+            to suppress, and so on) in plain language before the visitor
+            picks a question, and links to the related practice area page. I
+            could have added filler to get past the word count warning, but
+            that wouldn't have helped anyone reading the page.
+          </p>
+          <p>
+            Right after the intros went live, visibility on those pages fell
+            from about 25% to 13%. My best guess is the new intros were
+            competing with the existing FAQ answers for the same searches. I
+            decided to give it a week or two instead of undoing the changes,
+            and it climbed back. From January through September, the
+            Criminal Defense FAQ pages ended up as the site's top nine pages
+            by impressions, including the page for "welfare check," which
+            gets about 14,800 searches a month.
+          </p>
+          <p>
+            In October I did the same thing across all 15 Criminal Defense
+            FAQ hubs: new titles, headings, and meta descriptions on all of
+            them, and intros on the seven that didn't have one.
+          </p>
+        </div>
+      </details>
+    </div>
+
+    <div class="folder">
+      <span class="tab">2026-03</span>
+      <details>
+        <summary>
+          <h3>18 pages Google dropped from its index</h3>
+          <p class="summary-text">
+            Clicks were down and nobody knew why. I tracked most of the drop
+            to one folder of FAQ pages that Google had stopped indexing, ran a
+            small fix test, and the test didn't work.
+          </p>
+        </summary>
+        <div class="body">
+          <ul class="tags">
+            <li>About 75% of the click drop</li>
+            <li>No penalty</li>
+            <li>Change log by date</li>
+          </ul>
+          <p>
+            Search Console showed that 18 older FAQ pages about police
+            searches fell out of Google's index around August 19 to 20. That
+            accounted for about three quarters of the recent drop in clicks.
+            Before changing anything I checked the things that would have
+            needed a totally different fix: there was no manual action, the
+            robots.txt and sitemap were fine, there were no removal requests,
+            and the live URL tests passed. Google had just decided those pages
+            weren't worth indexing.
+          </p>
+          <p>
+            For the test, I refreshed three of the pages and their three hub
+            pages with new titles, intros, and internal links, then requested
+            indexing. I logged October 12 as the change date. I keep a change
+            log for every batch of edits (September 29, October 12, and so on)
+            so I can compare each one in Search Console separately.
+          </p>
+          <p>
+            When I checked on October 26, the three test pages still weren't
+            indexed, so refreshing them one at a time isn't going to be
+            enough. The next step is combining the 18 pages into three or four
+            stronger ones and redirecting the old URLs. Other pages from the
+            same October batches were doing better (see 2026-04).
+          </p>
+          <p>
+            Overall, average position went from 10.4 to a peak of 6.4. Raw
+            clicks were still down for the year, which has been true for a lot
+            of legal sites since AI Overviews started taking up the top of the
+            results page. I'm not going to claim my work reversed that.
+          </p>
+        </div>
+      </details>
+    </div>
+
+    <div class="folder">
+      <span class="tab">2026-04</span>
+      <details>
+        <summary>
+          <h3>Cutting service pages down and fixing the facts</h3>
+          <p class="summary-text">
+            Some of the most important service pages had grown into thousands
+            of words, and some of the legal details were out of date. I
+            rebuilt them and checked the facts against Kansas statutes.
+          </p>
+        </summary>
+        <div class="body">
+          <ul class="tags">
+            <li>Theft defense: 9.1 → 6.7</li>
+            <li>Expungement impressions doubled</li>
+            <li>Checked against K.S.A.</li>
+          </ul>
+          <p>
+            The theft defense page went from 6,000 to 8,000 words down to
+            about 1,800, with the dollar thresholds and penalties corrected.
+            The car accident page went from around 5,000 words to 1,700, with
+            the fault and filing deadline rules fixed. The DUI page was close
+            to 30,000 words. I rebuilt it around what someone with a new DUI
+            charge needs first (penalties, license suspension, the 14-day
+            hearing deadline, diversion) and moved 18 case law summaries into
+            their own blog post. Each page got a clearer title, a short FAQ,
+            and structured data listing an attorney as the author.
+          </p>
+          <p>
+            About two weeks later, the theft defense page had moved from an
+            average position of 9.1 to 6.7, expungement page impressions had
+            doubled, and a gun rights post I refreshed went from 10 clicks to
+            17.
+          </p>
+          <p>
+            While going through older pages I also found problems I didn't
+            think were mine to fix, like a statement on a page with 25,000
+            impressions that contradicted the case law cited on that same
+            page, and some county phone numbers that may be outdated. I sent
+            each one to the attorneys with the page, the problem, and why it
+            mattered, so they could make the call on the legal content.
+          </p>
+        </div>
+      </details>
+    </div>
+
+    <div class="folder">
+      <span class="tab">2026-05</span>
+      <details>
+        <summary>
+          <h3>Nine cities, three practice areas</h3>
+          <p class="summary-text">
+            I wrote and built 27 city pages for Criminal Defense, Family Law,
+            and Personal Injury across nine Johnson County cities, with
+            different copy for each city.
+          </p>
+        </summary>
+        <div class="body">
+          <ul class="tags">
+            <li>9 cities</li>
+            <li>3 practice areas</li>
+            <li>LegalService schema</li>
+          </ul>
+          <p>
+            Each page has its own intro, hero section, carousel content, and
+            LegalService structured data. I also fixed menus and formatting
+            that broke on phones. Copy-and-paste city pages are a common
+            problem on local sites, so I wrote each one around that specific
+            city and its courts.
+          </p>
+          <p>
+            While doing this I found that two sections were made of hand-built
+            pages that weren't actually connected to the CMS. Rebuilding them
+            would have taken a long time for not much payoff, so I recommended
+            leaving them as they are.
+          </p>
+        </div>
+      </details>
+    </div>
+
+    <div class="folder">
+      <span class="tab">2026-06</span>
+      <details>
+        <summary>
+          <h3>Structured data I built and then took out</h3>
+          <p class="summary-text">
+            I wrote a Python pipeline that generated FAQ and Article markup
+            for 237 practice area pages. The markup was valid, but it slowed
+            the site down, so I removed it.
+          </p>
+        </summary>
+        <div class="body">
+          <ul class="tags">
+            <li>Python, JavaScript</li>
+            <li>237 pages</li>
+            <li>Removed for speed</li>
+          </ul>
+          <p>
+            The CMS export flattened the site's page structure, so the script
+            had to rebuild the real URLs before it could generate markup for
+            each page. It also found that about 85% of the FAQ answers in one
+            export were placeholder text, so it rebuilt those from the actual
+            page content.
+          </p>
+          <p>
+            Getting it onto the live site was harder. The scripts that added
+            the markup to each page weren't reliable on the platform, and
+            while debugging I found two sets of scripts using the same names
+            and deleting each other's output. Even after fixing that, the
+            extra code was slowing pages down, and on a site this size it
+            wasn't worth it. I took it out and wrote up why.
+          </p>
+          <p>
+            What stayed: BlogPosting markup on 269 blog posts, and zero
+            structured data errors in SEMrush.
+          </p>
+        </div>
+      </details>
+    </div>
+
+    <div class="folder">
+      <span class="tab">2026-07</span>
+      <details>
+        <summary>
+          <h3>Fixing review markup with real reviews</h3>
+          <p class="summary-text">
+            The testimonials page had structured data errors because its review
+            markup didn't have ratings. Making ratings up would have cleared the
+            errors and could have gotten the site penalized.
+          </p>
+        </summary>
+        <div class="body">
+          <ul class="tags">
+            <li>3 → 0 errors</li>
+            <li>Verified Google reviews</li>
+          </ul>
+          <p>
+            Google treats ratings that aren't visible on the page as spam, and
+            that can cost a site its rich results everywhere. I replaced the
+            placeholder testimonials with real Google reviews, which have
+            actual star ratings, and built the markup from those, including an
+            overall rating that matches what visitors see. A SEMrush re-crawl
+            confirmed the errors were gone.
+          </p>
+        </div>
+      </details>
+    </div>
+
+    <div class="folder">
+      <span class="tab">2026-08</span>
+      <details>
+        <summary>
+          <h3>A lobby kiosk that goes back to the home screen</h3>
+          <p class="summary-text">
+            The office has a touchscreen directory in the lobby that needed to
+            reset when someone walked away from it. The kiosk software's
+            setting for that didn't work, so I fixed it in the app.
+          </p>
+        </summary>
+        <div class="body">
+          <ul class="tags">
+            <li>React</li>
+            <li>Android, ADB</li>
+          </ul>
+          <p>
+            The app is a single page, so every screen lives at the same URL,
+            and the kiosk's "reload after idle" setting just reloaded whatever
+            screen it was on. I added an idle timer that resets on any touch
+            or key press and goes back home after 20 seconds. I also locked the
+            Android tablet down over ADB so visitors can't leave the app.
+          </p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Local RAG AI System</h3>
+        <p>
+          A local AI assistant that answers questions about a set of
+          documents, using Ollama, ChromaDB, and Streamlit. I built it to
+          understand how language models find and cite sources, which is a
+          big part of AEO.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Retail Loss Simulation</h3>
+        <p>
+          A Python simulation of an inventory pipeline that flags stockouts on
+          fast-selling items from a sales log, with AWS S3 mocked for testing.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Homelab</h3>
+        <p>
+          An Ubuntu server I set up and manage over SSH. It runs game servers
+          and file storage for friends and family.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div>
+        <h3>SEO &amp; AEO</h3>
+        <ul>
+          <li>Keyword and intent research</li>
+          <li>On-page SEO and internal linking</li>
+          <li>AI visibility tracking</li>
+          <li>Structured data (schema.org)</li>
+          <li>Local SEO</li>
+          <li>Redirects and 404 cleanup</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Content &amp; Reporting</h3>
+        <ul>
+          <li>Web copy in plain language</li>
+          <li>FAQ, service, and landing pages</li>
+          <li>Titles and meta descriptions</li>
+          <li>Weekly reports to leadership</li>
+          <li>Change logs and before/after tests</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Tools &amp; Web</h3>
+        <ul>
+          <li>Google Search Console</li>
+          <li>SEMrush, Screaming Frog</li>
+          <li>Framer CMS</li>
+          <li>HTML, CSS, JavaScript, React</li>
+          <li>Python, SQL</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p>
+      I'm looking for marketing, SEO, and web roles, and I take freelance SEO
+      work too. The best way to reach me is email or LinkedIn.
+    </p>
+    <div class="links">
+      <a class="btn solid" href="mailto:arfvader18@gmail.com">Email</a>
+      <a class="btn" href="https://www.linkedin.com/in/adrian-frazier-79bb5529b/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <p class="small">Adrian Frazier, Olathe, Kansas</p>
+  </div>
+</footer>
+
+</body>
+</html>
